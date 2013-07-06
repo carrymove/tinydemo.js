@@ -1,8 +1,8 @@
-<html>
+﻿<html>
 	<head>
 		<title>Tinydemo.js</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/td-themes/default.css">
+		<link rel="stylesheet" type="text/css" href="tinydemo/themes/default.css">
 	</head>
 	<body>
 		<center>
@@ -15,11 +15,26 @@
 				</div>
 			</div>
 		</center>
-		<script type="text/javascript" src="js/tinydemo.js"></script>
+		<script type="text/javascript" src="tinydemo/tinydemo.js"></script>
 		<script type="text/javascript">
 			td.init({
 				scene: "demo"
 			});
+			td.add({
+				type: "title",
+				heading: "Tinydemo.js",
+				subheading: "Presentation engine"
+			});
+			td.add({
+				heading: "Что такое Tinydemo.js?",
+				text: "Tinydemo.js&nbsp;&mdash; это опенсорсная javascript-библиотека, с помощью которой можно создавать презентации, работающие прямо в браузере.",
+				images: ["img/kitten.jpg", "img/kitten.jpg", "img/kitten.jpg"]
+			});
+			td.add({
+				heading: "Преимущества Tinydemo.js",
+				text: "<ul><li>Открытость исходного кода;</li><li>Нет необходимости устанавливать дополнительный софт;</li><li>Высокий уровень кастомизации за счет плагинов и тем;</li><li>Презентации работают прямо в браузере.</li></ul>"
+			})
+			td.update();
 		</script>
 	</body>
 </html>

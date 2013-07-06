@@ -4,15 +4,55 @@ div.td-scene {
 	background-color: #ffffff;
 	overflow: hidden;
 	text-align: left;
+	cursor: default;
 }
 	div.td-slide {
 		display: none;
+		opacity: 0;
 		padding: 20px;
 	}
+	/* Title slide design */
+	div.td-type-title {
+		text-align: center;
+		padding-top: 150px;
+	}
+		div.td-type-title h1 {
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: lighter;
+			font-size: 48px;
+		}
+		div.td-type-title h2 {
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: lighter;
+			color: #666666;
+		}
+	/* Default slide design */
+	div.td-type-default h1 {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	div.td-type-default h2 {
+		font-family: Trebuchet MS, Helvetica, sans-serif;
+		font-style: italic;
+		color: #666666;
+	}
+	div.td-type-default div.td-text, div.td-type-default div.td-htmlcontent {
+		font-family: Verdana, Helvetica, sans-serif;
+		font-size: larger;
+	}
+	div.td-images {
+		text-align: center;
+		margin-top: 30px;
+	}
+		div.td-images img {
+			max-width: 40%;
+			max-height: 40%;
+			margin: 10px;
+		}
 	div#td-active {
 		position: absolute;
 		z-index: 0;
 		display: block;
+		opacity: 1.0;
 		width: 750px;
 		height: 550px;
 		overflow: hidden;
@@ -46,10 +86,18 @@ div.td-scene {
 			}
 				div#td-controls div#controls_ button {
 					border: 3px solid #ffffff;
-					background: #000000;
+					background-color: #000000;
 					color: #ffffff;
 					padding: 5px;
 					padding-left: 10px;
 					padding-right: 10px;
 					font-size: medium;
+			        -webkit-transition: background 0.25s linear;
+			        -moz-transition: background 0.25s linear;
+			        -ms-transition: background 0.25s linear;
+			        -o-transition: background 0.25s linear;
+			        transition: background 0.25s linear;
+				}
+				div#td-controls div#controls_ button:hover {
+					background-color: #333333;
 				}
