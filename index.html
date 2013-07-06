@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Tinydemo.js</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/td-themes/default.css">
+	</head>
+	<body>
+		<center>
+			<div id="demo">
+				<div id="td-controls">
+					<div id="controls_">
+						<button id="prv" onclick="td.prev();">&larr;</button>
+						<button id="nxt" onclick="td.next();">&rarr;</button>
+					</div>
+				</div>
+			</div>
+		</center>
+		<script type="text/javascript" src="js/tinydemo.js"></script>
+		<script type="text/javascript">
+			td.init({
+				scene: "demo"
+			});
+		</script>
+	</body>
+</html>
