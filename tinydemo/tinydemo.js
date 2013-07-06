@@ -54,7 +54,8 @@ var Tinydemo = {
 			text        = document.createElement("div"),
 			markedlist  = document.createElement("ul"),
 			htmlcontent = document.createElement("div"),
-			images      = document.createElement("div");
+			images      = document.createElement("div"),
+			iframe      = document.createElement("iframe");
 
 		if (options.type) {
 			classname = "td-slide td-type-" + options.type;
@@ -113,6 +114,14 @@ var Tinydemo = {
 			images.setAttribute("class", "td-images");
 			images.innerHTML = imglist;
 			slide.appendChild(images);
+		}
+
+		if (options.iframe) {
+			iframe.setAttribute("src", options.iframe.url);
+			iframe.setAttribute("scrolling", "yes");
+			iframe.setAttribute("width", options.iframe.width);
+			iframe.setAttribute("height", options.iframe.height);
+			slide.appendChild(iframe);
 		}
 
 		slide.setAttribute("class", classname);
