@@ -52,6 +52,7 @@ var Tinydemo = {
 			heading     = document.createElement("h1"),
 			subheading  = document.createElement("h2"),
 			text        = document.createElement("div"),
+			markedlist  = document.createElement("ul"),
 			htmlcontent = document.createElement("div"),
 			images      = document.createElement("div");
 
@@ -73,6 +74,23 @@ var Tinydemo = {
 			text.setAttribute("class", "td-text");
 			text.innerHTML = options.text;
 			slide.appendChild(text);
+		}
+
+		if (options.markedlist) {
+			var mrklist = [],
+				ending  = "";
+			for (var i = 0; i < options.markedlist.length; i++) {
+				mrklist[i] = document.createElement("li");
+				if (i < options.markedlist.length-1) {
+					ending = ";";
+				}
+				else {
+					ending = ".";
+				}
+				mrklist[i].innerHTML = options.markedlist[i] + ending;
+				markedlist.appendChild(mrklist[i]);
+			}
+			slide.appendChild(markedlist);
 		}
 
 		if (options.htmlcontent) {

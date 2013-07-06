@@ -1,10 +1,11 @@
 div.td-scene {
-	width: 800px;
-	height: 600px;
+	width: 100%;
+	height: 100%;
 	background-color: #ffffff;
 	overflow: hidden;
-	text-align: left;
+	text-align: center;
 	cursor: default;
+	margin: -5px;
 }
 	div.td-slide {
 		display: none;
@@ -27,42 +28,47 @@ div.td-scene {
 			color: #666666;
 		}
 	/* Default slide design */
-	div.td-type-default h1 {
-		font-family: Helvetica, Arial, sans-serif;
+	div.td-type-default {
+		text-align: left;
 	}
-	div.td-type-default h2 {
-		font-family: Trebuchet MS, Helvetica, sans-serif;
-		font-style: italic;
-		color: #666666;
-	}
-	div.td-type-default div.td-text, div.td-type-default div.td-htmlcontent {
-		font-family: Verdana, Helvetica, sans-serif;
-		font-size: larger;
-	}
-	div.td-images {
-		text-align: center;
-		margin-top: 30px;
-	}
-		div.td-images img {
-			max-width: 40%;
-			max-height: 40%;
-			margin: 10px;
+		div.td-type-default h1 {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 42px;
 		}
+		div.td-type-default h2 {
+			font-family: Trebuchet MS, Helvetica, sans-serif;
+			font-style: italic;
+			color: #666666;
+		}
+		div.td-type-default div.td-text, div.td-type-default div.td-htmlcontent, div.td-type-default ul {
+			font-family: Verdana, Helvetica, sans-serif;
+			font-size: 28px;
+		}
+		div.td-type-default div.td-images {
+			text-align: center;
+			margin-top: 30px;
+		}
+			div.td-type-default div.td-images img {
+				max-width: 40%;
+				max-height: 40%;
+				margin: 10px;
+			}
 	div#td-active {
 		position: absolute;
 		z-index: 0;
 		display: block;
 		opacity: 1.0;
-		width: 750px;
-		height: 550px;
+		width: 96.75%;
+		height: 100%;
 		overflow: hidden;
 	}
 		div#td-controls {
 			position: absolute;
 			z-index: 1;
 			height: 30px;
-			padding-top: 552.5px;
-			width: 800px;
+			margin: -8px;
+			bottom: 27px;
+			width: 100%;
 		}
 			div#td-controls div#controls_ {
 				padding: 5px;
