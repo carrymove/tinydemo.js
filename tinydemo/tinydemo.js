@@ -8,10 +8,22 @@ var Tinydemo = {
 		Tinydemo.scene = document.getElementById(options.scene);
 		Tinydemo.scene.setAttribute("class", "td-scene");
 		document.onkeyup = function(e) {
-			if (e.keyCode === 32) {
-				e.preventDefault();
-				Tinydemo.next();
+			console.log(e.which)
+			switch (e.which) {
+				case 32:
+				case 39:
+					e.preventDefault();
+					Tinydemo.next();
+					break;
+				case 37:
+					e.preventDefault();
+					Tinydemo.prev();
+					break;
 			}
+			//if (e.keyCode === 32) {
+			//	e.preventDefault();
+			//	Tinydemo.next();
+			//}
 		};
 	},
 	next: function() {
