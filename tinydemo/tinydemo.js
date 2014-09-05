@@ -112,6 +112,10 @@ var Tinydemo = {
 			slide.appendChild(htmlcontent);
 		}
 
+		if (options.htmlobject) {
+			slide.appendChild(options.htmlobject);
+		}
+
 		if (options.images) {
 			var imglist = "";
 			if (Array.isArray(options.images)) {
