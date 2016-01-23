@@ -1,10 +1,10 @@
 @font-face{ 
       font-family: 'web-symbols';
-          src: url(/././fonts/WebSymbolsLiga-Regular.eot);
-          src: url(/././fonts/WebSymbolsLiga-Regular.eot?#iefix) format('embedded-opentype'),
-               url(/././fonts/WebSymbolsLiga-Regular.woff) format('woff'),
-               url(/././fonts/WebSymbolsLiga-Regular.ttf) format('truetype'),
-               url(/././fonts/WebSymbolsLiga-Regular.svg#WebSymbolsRegular) format('svg');
+          src: url(/./tinydemo.js/fonts/WebSymbolsLiga-Regular.eot);
+          src: url(/./tinydemo.js/fonts/WebSymbolsLiga-Regular.eot?#iefix) format('embedded-opentype'),
+               url(/./tinydemo.js/fonts/WebSymbolsLiga-Regular.woff) format('woff'),
+               url(/./tinydemo.js/fonts/WebSymbolsLiga-Regular.ttf) format('truetype'),
+               url(/./tinydemo.js/fonts/WebSymbolsLiga-Regular.svg#WebSymbolsRegular) format('svg');
 }
 
 div.td-scene {
